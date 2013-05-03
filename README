@@ -1,0 +1,7 @@
+Written by Michael Straughan 04/05/2013
+
+Views each url page taken from file in a different thread via each proxy given in file; also takes delay parameter which is executed after the page is grabbed.
+Change referer header as needed, current is only an example.
+
+Usage: proxy_link_visitor.py [proxyfile] [urlfile] [delay]
+Example: proxy_link_visitory.py proxies.txt urls.txt 10
