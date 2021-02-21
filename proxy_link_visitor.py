@@ -7,8 +7,8 @@ def proxyFetchPage(proxy, url):
 	try:
 		try:
 			print(proxy, " -> ", url)
-			headers={'User-agent' : 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; de-de) AppleWebKit/523.10.3 (KHTML, like Gecko) Version/3.0.4 Safari/523.10'}
-			headers={'Referer' : 'http://plus.url.google.com'}
+			headers={'User-agent' : 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11A465 Twitter for iPhone BrandVerity/1.0 (http://www.brandverity.com/why-is-brandverity-visiting-me)'}
+			headers={'Referer' : 'http://google.com'}
 			proxy = {"html":"http://%s" % proxy}
 			proxy_support = urllib.request.ProxyHandler(proxy)
 			opener = urllib.request.build_opener(proxy_support, urllib.request.HTTPHandler(debuglevel=1))
